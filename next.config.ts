@@ -21,6 +21,12 @@ const nextConfig: NextConfig = {
       bodySizeLimit: "2mb",
     },
   },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.devtool = false;
+    }
+    return config;
+  },
 };
 
 export default nextConfig;
