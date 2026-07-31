@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/auth";
 import { searchDiscussions, GitHubApiError } from "@/lib/github";
 
+export const runtime = "edge";
+
+
 export async function GET(request: NextRequest) {
   try {
     const session = await auth();

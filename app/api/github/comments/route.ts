@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/auth";
 import { addComment, deleteComment, GitHubApiError } from "@/lib/github";
 
+export const runtime = "edge";
+
+
 export async function POST(request: NextRequest) {
   try {
     const session = await auth();

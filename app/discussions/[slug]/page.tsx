@@ -6,6 +6,9 @@ import { DiscussionDetailView } from "@/components/discussion/DiscussionDetailVi
 import { ErrorState } from "@/components/shared/ErrorState";
 import { auth } from "@/auth";
 
+export const runtime = "edge";
+
+
 interface DiscussionDetailPageProps {
   params: Promise<{
     slug: string;

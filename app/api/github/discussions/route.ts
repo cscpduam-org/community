@@ -8,6 +8,9 @@ import {
 } from "@/lib/github";
 import { DiscussionFilters } from "@/types/github";
 
+export const runtime = "edge";
+
+
 export async function GET(request: NextRequest) {
   try {
     const session = await auth();

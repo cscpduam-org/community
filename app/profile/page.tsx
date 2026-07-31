@@ -7,6 +7,9 @@ import { getUserProfile, getDiscussions } from "@/lib/github";
 import { ProfileView } from "@/components/profile/ProfileView";
 import { Button } from "@/components/ui/button";
 
+export const runtime = "edge";
+
+
 export const metadata: Metadata = {
   title: "Profile",
   description:

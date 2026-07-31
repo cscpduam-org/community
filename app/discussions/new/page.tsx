@@ -8,6 +8,9 @@ import { DiscussionEditor } from "@/components/discussion/DiscussionEditor";
 import { Button } from "@/components/ui/button";
 import { Category } from "@/types/github";
 
+export const runtime = "edge";
+
+
 export const metadata: Metadata = {
   title: "New Discussion",
   description:

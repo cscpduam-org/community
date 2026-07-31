@@ -4,6 +4,9 @@ import Link from "next/link";
 import { AlertCircle, ArrowLeft, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+export const runtime = "edge";
+
+
 export const metadata: Metadata = {
   title: "Authentication Error | CSCPDUAM Community",
   description: "An error occurred during GitHub authentication.",

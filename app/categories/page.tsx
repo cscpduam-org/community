@@ -8,6 +8,9 @@ import { sanitizeCategoryName, sanitizeCategoryEmoji } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { auth } from "@/auth";
 
+export const runtime = "edge";
+
+
 export const metadata: Metadata = {
   title: "Categories",
   description:

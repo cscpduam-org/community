@@ -3,6 +3,9 @@ import { auth } from "@/auth";
 import { addReaction, removeReaction, GitHubApiError } from "@/lib/github";
 import { ReactionContent } from "@/types/github";
 
+export const runtime = "edge";
+
+
 const VALID_REACTIONS: ReactionContent[] = [
   "THUMBS_UP",
   "THUMBS_DOWN",

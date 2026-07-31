@@ -8,6 +8,9 @@ import { Sidebar } from "@/components/sidebar/Sidebar";
 import { Button } from "@/components/ui/button";
 import { auth } from "@/auth";
 
+export const runtime = "edge";
+
+
 interface CategoryDetailPageProps {
   params: Promise<{
     slug: string;

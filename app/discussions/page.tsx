@@ -9,6 +9,9 @@ import { Sidebar } from "@/components/sidebar/Sidebar";
 import { Button } from "@/components/ui/button";
 import { auth } from "@/auth";
 
+export const runtime = "edge";
+
+
 export const metadata: Metadata = {
   title: "Discussions",
   description:

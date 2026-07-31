@@ -6,6 +6,9 @@ import { Github, ArrowLeft, ShieldCheck, Sparkles, MessageSquare } from "lucide-
 import { signIn } from "@/auth";
 import { Button } from "@/components/ui/button";
 
+export const runtime = "edge";
+
+
 export const metadata: Metadata = {
   title: "Sign In | CSCPDUAM Community",
   description:

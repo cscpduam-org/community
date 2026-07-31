@@ -7,6 +7,9 @@ import { DiscussionList } from "@/components/discussion/DiscussionList";
 import { Sidebar } from "@/components/sidebar/Sidebar";
 import { Button } from "@/components/ui/button";
 
+export const runtime = "edge";
+
+
 export const metadata: Metadata = {
   title: "Community | CSCPDUAMA",
 };

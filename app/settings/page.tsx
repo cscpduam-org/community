@@ -6,6 +6,9 @@ import { auth } from "@/auth";
 import { SettingsView } from "@/components/settings/SettingsView";
 import { Button } from "@/components/ui/button";
 
+export const runtime = "edge";
+
+
 export const metadata: Metadata = {
   title: "Settings",
   description:
