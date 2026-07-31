@@ -66,6 +66,11 @@ export const metadata: Metadata = {
     description:
       "Official community discussion platform for the Department of Computer Science, PDUAM.",
   },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
   metadataBase: new URL(process.env.NEXTAUTH_URL || "https://community.cscpduam.org"),
 };
 
