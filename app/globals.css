@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 33% 98%;
+    --foreground: 224 71% 4%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+    --primary: 241 82% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 224 71% 4%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8% 46%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 224 71% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 241 82% 64%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 20% 98%;
+    --card: 222 35% 10%;
+    --card-foreground: 210 20% 98%;
+    --popover: 222 35% 10%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 241 82% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 30% 15%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 222 30% 15%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 222 30% 15%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 222 25% 18%;
+    --input: 222 25% 18%;
+    --ring: 241 82% 64%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/20 rounded-full hover:bg-muted-foreground/40 transition-colors;
+}
+
+/* Premium Grid Background Pattern */
+.grid-pattern {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(95, 93, 236, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(95, 93, 236, 0.05) 1px, transparent 1px);
+}
+
+.dark .grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(95, 93, 236, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(95, 93, 236, 0.03) 1px, transparent 1px);
+}
