@@ -27,6 +27,9 @@ const nextConfig: NextConfig = {
     }
     return config;
   },
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  turbopack: {},
 };
 
 export default nextConfig;
